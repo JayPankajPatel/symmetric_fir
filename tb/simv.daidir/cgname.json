@@ -17,17 +17,23 @@
         "module",
         3
     ],
+    "counter": [
+        "counter",
+        "MQn6b",
+        "module",
+        7
+    ],
     "uvm_pkg": [
         "uvm_pkg",
         "zr7M1",
         "module",
         4
     ],
-    "tb_counter": [
-        "tb_counter",
-        "NtmA7",
+    "tb_shiftreg": [
+        "tb_shiftreg",
+        "FIi1Z",
         "module",
-        5
+        8
     ],
     "...MASTER...": [
         "SIM",
