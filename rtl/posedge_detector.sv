@@ -2,13 +2,13 @@
 module posedge_detector(
     input logic clk,
     input logic rst,
-    input logic filter,
+    input logic signal,
 
-    output logic posedge_filter, 
+    output logic is_posedge_signal, 
 ); 
     logic in, in_d; 
 
-    assign in = filter;
+    assign in = signal;
 
     always_ff @(posedge clk or posedge rst) begin
         if(rst) begin 
@@ -19,5 +19,5 @@ module posedge_detector(
         end
     end
 
-    assign posedge_filter = ~in_d && in; 
+    assign is_posedge_signal = ~in_d && in; 
 endmodule :  posedge_detector
