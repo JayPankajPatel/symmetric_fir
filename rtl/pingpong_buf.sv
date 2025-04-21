@@ -22,7 +22,7 @@ module pingpong_buf #(
 
     counter #(.MAX_COUNT(MAX_COUNT)) COUNT_TO_512 (
         .clk(clk),
-        .rst(rst | switch),  
+        .rst(rst),  
         .en(count_en),
         .out(buf_idx)
     );
