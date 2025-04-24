@@ -17,11 +17,11 @@
         "module",
         3
     ],
-    "counter": [
-        "counter",
-        "MQn6b",
+    "shiftreg": [
+        "shiftreg",
+        "S6t5u",
         "module",
-        7
+        5
     ],
     "uvm_pkg": [
         "uvm_pkg",
@@ -29,11 +29,11 @@
         "module",
         4
     ],
-    "tb_shiftreg": [
-        "tb_shiftreg",
-        "FIi1Z",
+    "tb_double_buf": [
+        "tb_double_buf",
+        "UpnDu",
         "module",
-        8
+        9
     ],
     "...MASTER...": [
         "SIM",

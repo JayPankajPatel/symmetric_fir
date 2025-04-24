@@ -1,4 +1,6 @@
 
+// MAX_COUNT uses an exclusive on the upper bound meaning it will count up to MAX_COUNT-1
+// or simply [0-MAX_COUNT-1]
 module counter #(parameter MAX_COUNT = 256)(
     input logic clk,
     input logic rst,

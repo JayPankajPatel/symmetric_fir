@@ -3,7 +3,7 @@
 
 module tb_counter;
 
-localparam max_count_val = 8; 
+localparam max_count_val = 512; 
   // Testbench signals
   logic clk;
   logic rst;
@@ -37,7 +37,7 @@ localparam max_count_val = 8;
     en = 1;
 
     // Count and observe output
-    repeat (10) begin
+    repeat (max_count_val) begin
       @(posedge clk);
       $display("Time %0t: out = %b", $time, out);
     end
@@ -48,7 +48,7 @@ localparam max_count_val = 8;
     rst = 0;
 
     // Resume count
-    repeat (10) begin
+    repeat (max_count_val) begin
       @(posedge clk);
       $display("Time %0t: out = %b", $time, out);
     end
