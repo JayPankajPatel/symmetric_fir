@@ -1,0 +1,24 @@
+Time resolution is 1 ps
+Starting counter test...
+Time 15000: out = 0
+Time 25000: out = 1
+Time 35000: out = 0
+Time 45000: out = 1
+Time 55000: out = 0
+Time 65000: out = 1
+Time 75000: out = 0
+Time 85000: out = 1
+Time 95000: out = 0
+Time 105000: out = 1
+Time 125000: out = 1
+Time 135000: out = 0
+Time 145000: out = 1
+Time 155000: out = 0
+Time 165000: out = 1
+Time 175000: out = 0
+Time 185000: out = 1
+Time 195000: out = 0
+Time 205000: out = 1
+Time 215000: out = 0
+Test finished.
+$finish called at time : 215 ns : File "/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_counter.sv" Line 53

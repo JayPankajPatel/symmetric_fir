@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../fir.srcs/sources_1/imports/rtl/counter.sv" \
+"../../../../fir.srcs/sources_1/imports/rtl/posedge_detector.sv" \
+"../../../../fir.srcs/sources_1/imports/rtl/pingpong_buf.sv" \
+"../../../../fir.srcs/sources_1/imports/rtl/top.sv" \
+"../../../../fir.srcs/sim_1/new/tb_pong.sv" \
+"../../../../fir.srcs/sim_1/imports/tb/tb_pingpong_buf.sv" \
+"../../../../fir.srcs/sim_1/new/tb_counter.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
