@@ -4,11 +4,10 @@ module double_buf #(
     input  logic clk,
     input  logic rst,
     input  logic bit_in,
-    output logic bit_out
+    output logic [MAX_COUNT-1:0] buf_out 
 ); 
     // 512-bit buffers
-    logic [0:MAX_COUNT-1] buf_a;
-    logic [0:MAX_COUNT-1] buf_b;
+    logic [0:MAX_COUNT-1] buf_in;
     logic [$clog2(MAX_COUNT)-1:0] buf_idx;
 
     counter #(.MAX_COUNT(MAX_COUNT)) COUNT_TO_511 (
@@ -18,7 +17,7 @@ module double_buf #(
         .out(buf_idx)
     );
 
-    assign download = (buf_idx == MAX_COUNT-1) ? 1 : 0;
+    assign download = (buf_idx == MAX_COUNT-1);
 
     // Main buffer read/write logic
     always_ff @(posedge clk or posedge rst) begin 
