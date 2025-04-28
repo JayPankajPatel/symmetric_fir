@@ -19,8 +19,12 @@ module tb_double_buf();
     end
     
     initial begin 
-        if(clk)
-            clk_count += 1; 
+        clk_count = 0;
+        forever begin
+            if(clk) begin 
+                clk_count += 1; 
+            end
+        end
     end
 
     initial begin 

@@ -1,0 +1,3 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1745551645.450698608, "rt":0.18, "ut":0.09, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1745551645.251752471}

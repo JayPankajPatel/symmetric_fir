@@ -21,24 +21,24 @@
         "shiftreg",
         "S6t5u",
         "module",
-        5
+        4
     ],
     "uvm_pkg": [
         "uvm_pkg",
         "zr7M1",
         "module",
-        4
+        5
     ],
     "tb_double_buf": [
         "tb_double_buf",
         "UpnDu",
         "module",
-        9
+        6
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        6
+        7
     ]
 }

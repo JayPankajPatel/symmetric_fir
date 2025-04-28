@@ -1,0 +1,197 @@
+#!/usr/bin/python3
+
+import subprocess as sp
+import argparse
+import os
+import time
+import random
+
+res=0
+uid=""
+
+
+def check_if_has(lines,itms):
+    """check_if_has checks to see if any item in itms is in the lines"""
+    for x in itms:
+        for l in lines:
+            if x in l:
+                print(l)
+                return True
+    return False
+
+trailers="\n\r\t "
+
+def runecho(args,timeout=10.0):
+    p1=sp.Popen(args,stderr=sp.STDOUT,stdout=sp.PIPE,encoding="utf-8")
+    tstart=time.time()
+    rv=[]
+    cline=""
+    while True:
+        oc=p1.stdout.read(1)
+        if not oc:
+            time.sleep(0.10)
+            if p1.poll()!=None:
+                if len(cline)>0:
+                   rv.append(cline)
+                return rv
+            if (time.time()-tstart)>timeout :
+                p1.kill()
+                if len(cline)>0:
+                   rv.append(cline)
+                print("Timeout")
+                rv.append("Timeout")
+                return rv
+        else:
+           print(oc,end="")
+           if oc=="\n":
+               rv.append(cline)
+               cline=""
+           else:
+               cline+=oc
+    if len(cline)>0:
+       rv.append(cline)
+    return rv
+
+
+def runsynthesis(clkperiod):
+    global uid
+    simres="No returned result\n"
+    try:
+        os.remove("synthesis.script")
+    except:
+        pass
+    with open("synthesis.script","w") as fs:
+        fs.write("""set link_library {{/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}}
+set target_library {{/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}}
+suppress_message {{ UID-401 VER-130 }}
+read_sverilog filt.sv
+current_design filt
+create_clock Clock -name Clock -period {1:5.3f}
+set_propagated_clock Clock
+set_clock_uncertainty 0.25 Clock
+set_propagated_clock Clock
+set_output_delay 0.5 -clock Clock [all_outputs]
+set all_inputs_wo_rst_Clock [remove_from_collection [remove_from_collection [all_inputs] [get_port Clock]] [get_port Reset]]
+set_driving_cell -lib_cell NAND2X1 $all_inputs_wo_rst_Clock
+set_input_delay 0.6 -clock Clock $all_inputs_wo_rst_Clock
+set_output_delay 0.6 -clock Clock [all_outputs]
+set_fix_hold [ get_clocks Clock ]
+set_output_delay 0.3 -clock Clock [all_outputs]
+set_max_delay {1:5.3f} -from [all_inputs] -to [all_outputs]
+compile_ultra
+create_clock Clock -name Clock -period {0:5.3f}
+
+update_timing
+report_timing -max_paths 5
+write -hierarchy -format verilog -output filt_gates.v
+quit
+
+""".format(clkperiod,clkperiod*0.7))
+    try:
+        os.remove("filt_gates.v".format(idnum))
+    except:
+        pass
+    cwd=runecho(['pwd'])[0]
+    try:
+        with open("sss","w") as fs:
+            fs.write(f"""#!/usr/bin/csh
+cd {cwd}
+source /apps/design_environment.csh
+dc_shell -f synthesis.script | tee synres.txt
+""")
+        os.chmod("sss",0o705)
+        arg=["./sss"]
+        simres=runecho(arg,timeout=800)
+    except:
+        print("Synthesis didn't work")
+        print(simres)
+        res.write("synthesis didn't run\n")
+        return False
+    lines=simres
+    print("num returned lines",len(lines))
+    if check_if_has(lines,["Latch","latch","Error","error"," arc","loop","Loop",
+                           "violated","Violated","VIOLATED","ERROR","LATCH"]):
+        print("Synthesis has errors")
+        res.write("Synthesis failed\n")
+        return False
+    res.write("Synthesis worked ish\n")
+    return True
+
+def runvcs():
+    sp.call(["rm","-rf","simv","simv.daidir","csrc","*.vcd"])
+    simres="No returned result\n"
+    try:
+        arg=["./sv_vcs","tproj.sv"]
+        simres=runecho(arg,timeout=100)
+    except:
+        print("Simulation didn't work")
+        print(simres)
+        res.write("VCS didn't run\n")
+        return False
+    lines=simres
+    if check_if_has(lines,["Error","= ="]) :
+        print("VCS simulation failed\n")
+        res.write("VCS simulation failed\n")
+        return False
+    if not check_if_has(lines,["Ran to completion --- what happiness"]):
+        print("VCS simulation didn't complete successfully")
+        res.write("VCS didn't complete successfully\n")
+        return False
+    res.write("VCS simulation ran\n")
+    print("\n\n\nVCS simulation worked\n\n")
+    return True
+
+
+def rungates():
+    sp.call(["rm","-rf","simv","simv.daidir","csrc","*.vcd"])
+    simres="No returned result\n"
+    try:
+        arg=["./sv_vcs","/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.v","tprojbgates.v"]
+        simres=runecho(arg,timeout=100)
+    except:
+        print("Simulation didn't work")
+        print(simres)
+        res.write("VCS didn't run\n")
+        return False
+    lines=simres
+    if check_if_has(lines,["Error","= ="]) :
+        print("VCS simulation failed\n")
+        res.write("VCS simulation failed\n")
+        return False
+    if not check_if_has(lines,["Ran to completion --- what happiness"]):
+        print("VCS simulation didn't complete successfully")
+        res.write("VCS didn't complete successfully\n")
+        return False
+    res.write("VCS simulation ran\n")
+    print("\n\n\nVCS simulation worked\n\n")
+    return True
+
+
+
+
+def main():
+    global res,uid
+    clkperiod=2.5
+    resfn="results.txt"
+    parser=argparse.ArgumentParser(description='287 S25 Proj')
+    parser.add_argument("--clkperiod",default=1.4)
+    parser.add_argument("--resultsFileName",default="results.txt")
+    uid=runecho(['id','-un'])[0]
+    print(uid)
+    args = parser.parse_args()
+    print(args)
+    resfn=args.resultsFileName
+    clkperiod=float(args.clkperiod)
+    with open(resfn,"w") as res:
+        res.write("Run for project\n")
+        res.write("Run at {}\n".format(time.asctime(time.localtime(time.time()))))
+        if not runvcs():
+            return
+        if not runsynthesis(clkperiod):
+            return
+        if not rungates():
+            return
+        res.write("Proj worked\n")
+
+main()
+
