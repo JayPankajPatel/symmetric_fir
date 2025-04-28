@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/imports/tb/tb_pingpong_buf.sv,1745208704,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_counter.sv,,,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_counter.sv,1745209713,systemVerilog,,,,tb_counter,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_pong.sv,1745209120,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/imports/tb/tb_pingpong_buf.sv,,tb_pong,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/counter.sv,1745209601,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/posedge_detector.sv,,counter,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/pingpong_buf.sv,1745209423,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/top.sv,,pingpong_buf,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/posedge_detector.sv,1745208599,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/pingpong_buf.sv,,posedge_detector,,uvm,,,,,,
+/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sources_1/imports/rtl/top.sv,1745204976,systemVerilog,,/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_pong.sv,,top,,uvm,,,,,,

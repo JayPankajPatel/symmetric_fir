@@ -1,0 +1,10 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/jay/Repos/AMD/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_counter_behav xil_defaultlib.tb_counter xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9543] actual bit length 1 differs from formal bit length 3 for port 'out' [/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir/fir.srcs/sim_1/new/tb_counter.sv:16]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

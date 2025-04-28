@@ -1,0 +1,464 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 29064
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Apr 20 21:07:52 PDT 2025
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 6.8.0-57-generic
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/home/jay/Repos/AMD/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/home/jay/Repos/AMD/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	jay
+User home directory: /home/jay
+User working directory: /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/jay/Repos/AMD/Vivado
+HDI_APPROOT: /home/jay/Repos/AMD/Vivado/2024.1
+RDI_DATADIR: /home/jay/Repos/AMD/Vivado/2024.1/data
+RDI_BINDIR: /home/jay/Repos/AMD/Vivado/2024.1/bin
+
+Vivado preferences file: /home/jay/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/jay/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/jay/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/home/jay/Repos/AMD/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/vivado.log
+Vivado journal file: 	/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-29064-jay-Lenovo-Legion-7-15IMH05
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+PYENV_SHELL: bash
+RDI_APPROOT: /home/jay/Repos/AMD/Vivado/2024.1
+RDI_BASEROOT: /home/jay/Repos/AMD/Vivado
+RDI_BINROOT: /home/jay/Repos/AMD/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /home/jay/Repos/AMD/Vivado/2024.1/data
+RDI_INSTALLROOT: /home/jay/Repos/AMD
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /home/jay/Repos/AMD/Vivado/2024.1/lib/lnx64.o/Ubuntu/22:/home/jay/Repos/AMD/Vivado/2024.1/lib/lnx64.o/Ubuntu:/home/jay/Repos/AMD/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /home/jay/Repos/AMD/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /home/jay/Repos/AMD/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado:jay-Lenovo-Legion-7-15IMH05_1745208451_29023
+RDI_SHARED_DATA: /home/jay/Repos/AMD/SharedData/2024.1/data
+RDI_TPS_ROOT: /home/jay/Repos/AMD/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /home/jay/Repos/AMD/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: /home/jay/Repos/AMD/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /home/jay/Repos/AMD/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /home/jay/Repos/AMD/Vivado/2024.1
+XILINX_VIVADO: /home/jay/Repos/AMD/Vivado/2024.1
+XILINX_VIVADO_HLS: /home/jay/Repos/AMD/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,491 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Error: 'Can't open project ''. Please verify that the project file still exists. (Open Project)'
+selectButton("OptionPane.button", "OK", "Open Project"); // JButton (OptionPane.button)
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,558 MB. GUI used memory: 68 MB. Current time: 4/20/25, 9:07:53 PM PDT
+selectButton("NEXT", "Next >", "New Project"); // JButton (NEXT)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "fir"); // R (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next >", "New Project"); // JButton (NEXT)
+// [GUI Memory]: 148 MB (+153101kb) [00:00:21]
+// [Engine Memory]: 1,547 MB (+1470695kb) [00:00:21]
+selectButton("NEXT", "Next >", "New Project"); // JButton (NEXT)
+// Elapsed time: 13 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc71"); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0); // c (PAResourceEtoH.FPGAChooser_FPGA_TABLE)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0, false, false, false, false, true); // c (PAResourceEtoH.FPGAChooser_FPGA_TABLE) - Double Click
+selectButton("NEXT", "Next >", "New Project"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project fir /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir -part xc7a100tcsg324-1 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,656 MB (+32660kb) [00:00:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  1700 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jay/Repos/AMD/Vivado/2024.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,787 MB. GUI used memory: 70 MB. Current time: 4/20/25, 9:08:23 PM PDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 1,787 MB (+51358kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish", "New Project"); // JButton (FINISH)
+// 'g' command handler elapsed time: 32 seconds
+dismissDialog("Create Project"); // bj (Create Project Progress)
+dismissDialog("New Project"); // f (dialog0)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+String[] filenames31467 = {"/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/counter.sv", "/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/pingpong_buf.sv", "/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv", "/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/top.sv"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 14 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (dialog1)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/pingpong_buf.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/top.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/counter.sv} 
+// Elapsed Time for: 'L.f': 20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 22s
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 156 MB (+85kb) [00:01:04]
+// Elapsed Time for: 'L.f': 24s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 74 MB. Current time: 4/20/25, 9:08:48 PM PDT
+// Elapsed Time for: 'L.f': 26s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 30s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 32s
+// [Engine Memory]: 1,886 MB (+9534kb) [00:01:14]
+// Elapsed Time for: 'L.f': 34s
+// Elapsed time: 42 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "4"); // g (PAResourceEtoH.FileSetPanel_MESSAGES)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-1206] Syntax error near 'MAX_COUNT' [/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/counter.sv:23]. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/counter.sv;-;;-;16;-;line;-;23;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// PAPropertyPanels.initPanels (counter.sv) elapsed time: 0.2s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 77 MB. Current time: 4/20/25, 9:09:28 PM PDT
+selectCodeEditor("counter.sv", 218, 342); // ac (counter.sv)
+selectCodeEditor("counter.sv", 276, 252); // ac (counter.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:12s
+// Elapsed Time for: 'L.f': 01m:14s
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-1206] Syntax error near ')' [/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv:8]. ]", 2, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv;-;;-;16;-;line;-;8;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// [Engine Memory]: 1,985 MB (+4739kb) [00:01:59]
+selectCodeEditor("posedge_detector.sv", 267, 96); // ac (posedge_detector.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 77 MB. Current time: 4/20/25, 9:09:43 PM PDT
+// Elapsed Time for: 'L.f': 01m:20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:22s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01m:24s
+selectCodeEditor("posedge_detector.sv", 246, 256); // ac (posedge_detector.sv)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // g (PAResourceEtoH.FileSetPanel_MESSAGES)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Elapsed Time for: 'L.f': 01m:26s
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-1206] Syntax error near ';' [/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv:15]. ]", 5, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv;-;;-;16;-;line;-;15;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("posedge_detector.sv", 173, 220); // ac (posedge_detector.sv)
+selectCodeEditor("posedge_detector.sv", 275, 336); // ac (posedge_detector.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:38s
+// Elapsed Time for: 'L.f': 01m:40s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,062 MB. GUI used memory: 78 MB. Current time: 4/20/25, 9:10:03 PM PDT
+// Elapsed time: 10 seconds
+selectCodeEditor("posedge_detector.sv", 119, 148); // ac (posedge_detector.sv)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// PAPropertyPanels.initPanels (sim_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed time: 90 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN)
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 8 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (dialog3)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv 
+// Elapsed Time for: 'L.f': 03m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:38s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 03m:40s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,099 MB. GUI used memory: 79 MB. Current time: 4/20/25, 9:12:03 PM PDT
+// [Engine Memory]: 2,099 MB (+15794kb) [00:04:22]
+// Elapsed Time for: 'L.f': 03m:42s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ap (PAResourceCommand.PACommandNames_SET_AS_TOP, set_as_top_menu)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES)
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 5 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // c (dialog5)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv 
+// Elapsed Time for: 'L.f': 03m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:00s
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 10, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed Time for: 'L.f': 04m:02s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'L.f': 04m:04s
+selectCodeEditor("tb_pingpong_buf.sv", 111, 79); // ac (tb_pingpong_buf.sv)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,159 MB. GUI used memory: 81 MB. Current time: 4/20/25, 9:12:28 PM PDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // V (dialog7)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv 
+// Elapsed Time for: 'L.f': 04m:12s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'L.f': 04m:14s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("tb_pingpong_buf.sv", 204, 71); // ac (tb_pingpong_buf.sv)
+// [Engine Memory]: 2,207 MB (+3689kb) [00:05:00]
+selectCodeEditor("tb_pingpong_buf.sv", 141, 24); // ac (tb_pingpong_buf.sv)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,208 MB. GUI used memory: 82 MB. Current time: 4/20/25, 9:12:43 PM PDT
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_pingpong_buf.sv", 116, 34); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 116, 34, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'c'); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 113, 81); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 106, 41); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 106, 41, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'c'); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 119, 81); // ac (tb_pingpong_buf.sv)
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'v'); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 71, 61); // ac (tb_pingpong_buf.sv)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("pingpong_buf.sv", 386, 192); // ac (pingpong_buf.sv)
+typeControlKey((HResource) null, "pingpong_buf.sv", 'c'); // ac (pingpong_buf.sv)
+selectCodeEditor("pingpong_buf.sv", 196, 148); // ac (pingpong_buf.sv)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,248 MB. GUI used memory: 83 MB. Current time: 4/20/25, 9:13:08 PM PDT
+selectCodeEditor("pingpong_buf.sv", 74, 145); // ac (pingpong_buf.sv)
+typeControlKey((HResource) null, "pingpong_buf.sv", 'c'); // ac (pingpong_buf.sv)
+// Elapsed time: 35 seconds
+selectCodeEditor("pingpong_buf.sv", 319, 121); // ac (pingpong_buf.sv)
+selectCodeEditor("pingpong_buf.sv", 223, 7); // ac (pingpong_buf.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pingpong_buf.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_pingpong_buf.sv", 472, 240); // ac (tb_pingpong_buf.sv)
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'v'); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 254, 147); // ac (tb_pingpong_buf.sv)
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'v'); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 160, 109); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 160, 109, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+selectCodeEditor("tb_pingpong_buf.sv", 160, 109); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 136, 236); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 136, 234, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+selectCodeEditor("tb_pingpong_buf.sv", 136, 234); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 254, 270); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 254, 270, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+selectCodeEditor("tb_pingpong_buf.sv", 254, 270); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 288, 231); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 126, 11); // ac (tb_pingpong_buf.sv)
+selectCodeEditor("tb_pingpong_buf.sv", 126, 11, false, false, false, false, true); // ac (tb_pingpong_buf.sv) - Double Click
+selectCodeEditor("tb_pingpong_buf.sv", 126, 11); // ac (tb_pingpong_buf.sv)
+typeControlKey((HResource) null, "tb_pingpong_buf.sv", 'c'); // ac (tb_pingpong_buf.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "posedge_detector.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("posedge_detector.sv", 44, 6); // ac (posedge_detector.sv)
+typeControlKey((HResource) null, "posedge_detector.sv", 'v'); // ac (posedge_detector.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("counter.sv", 15, 9); // ac (counter.sv)
+typeControlKey((HResource) null, "counter.sv", 'v'); // ac (counter.sv)
+selectCodeEditor("counter.sv", 293, 484); // ac (counter.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "posedge_detector.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pingpong_buf.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pingpong_buf.sv", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("pingpong_buf.sv", 378, 241); // ac (pingpong_buf.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+// Elapsed Time for: 'L.f': 06m:14s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,268 MB. GUI used memory: 83 MB. Current time: 4/20/25, 9:14:38 PM PDT
+// Elapsed Time for: 'L.f': 06m:16s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 6, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ap (PAResourceCommand.PACommandNames_SET_AS_TOP, set_as_top_menu)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ap (PAResourceCommand.PACommandNames_SET_AS_TOP, set_as_top_menu)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ap (PAResourceCommand.PACommandNames_SET_AS_TOP, set_as_top_menu)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ap (PAResourceCommand.PACommandNames_SET_AS_TOP, set_as_top_menu)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ap (PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, simulation_run_post_synthesis_functional_menu)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, pingpong_buf (pingpong_buf.sv)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ap (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // V (dialog8)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv 
+// Elapsed Time for: 'L.f': 06m:40s
+selectCodeEditor("pingpong_buf.sv", 467, 160); // ac (pingpong_buf.sv)
+// Elapsed Time for: 'L.f': 06m:42s
+// Elapsed time: 10 seconds
+selectCodeEditor("pingpong_buf.sv", 239, 499); // ac (pingpong_buf.sv)
+selectCodeEditor("pingpong_buf.sv", 239, 499, false, false, false, false, true); // ac (pingpong_buf.sv) - Double Click
+selectCodeEditor("pingpong_buf.sv", 239, 497); // ac (pingpong_buf.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 06m:54s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,316 MB. GUI used memory: 85 MB. Current time: 4/20/25, 9:15:18 PM PDT
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// [Engine Memory]: 2,318 MB (+532kb) [00:07:37]
+// Elapsed Time for: 'L.f': 06m:56s
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES)
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_INCLUDE_ALL_DESIGN_SOURCES_FOR_SIMULATION, "Include all design sources for simulation", false); // f (PAResourceQtoS.SrcChooserPanel_INCLUDE_ALL_DESIGN_SOURCES_FOR_SIMULATION): FALSE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_INCLUDE_ALL_DESIGN_SOURCES_FOR_SIMULATION, "Include all design sources for simulation", true); // f (PAResourceQtoS.SrcChooserPanel_INCLUDE_ALL_DESIGN_SOURCES_FOR_SIMULATION): TRUE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): TRUE
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (dialog9)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset sim_1 -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv 
+// Elapsed Time for: 'L.f': 07m:14s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07m:16s
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+// Elapsed Time for: 'L.f': 07m:22s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, "Copy All Files Into Project"); // ap (PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, import_all_srcs_menu)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files 
+// Tcl Message: INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+// Elapsed Time for: 'L.f': 07m:28s
+// Elapsed Time for: 'L.f': 07m:30s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,337 MB. GUI used memory: 85 MB. Current time: 4/20/25, 9:15:53 PM PDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectCodeEditor("pingpong_buf.sv", 272, 249); // ac (pingpong_buf.sv)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, tb_pingpong_buf.sv]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click

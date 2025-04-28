@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Apr 20 21:07:33 2025
+# Process ID: 29064
+# Current directory: /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado
+# Command line: vivado .
+# Log file: /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/vivado.log
+# Journal file: /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/vivado.jou
+# Running On        :jay-Lenovo-Legion-7-15IMH05
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency     :3200.242 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16532 MB
+# Swap memory       :17179 MB
+# Total Virtual     :33712 MB
+# Available Virtual :27382 MB
+#-----------------------------------------------------------
+start_gui
+create_project fir /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/Vivado/fir -part xc7a100tcsg324-1
+add_files -norecurse {/home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/pingpong_buf.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/posedge_detector.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/top.sv /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/rtl/counter.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv] -no_script -reset -force -quiet
+remove_files  /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv
+export_ip_user_files -of_objects  [get_files /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/jay/School/SJSU_EE_Masters/Classes/EE-287-ASIC-CMOS-Design/symmetric_fir/tb/tb_pingpong_buf.sv
+update_compile_order -fileset sim_1
+import_files
