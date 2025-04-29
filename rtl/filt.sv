@@ -78,7 +78,7 @@ module filt (
                 next_state = CALC;
             end
             CALC: begin
-                if (calc_end_of_buffer >> 1) // only need to go to the middle of buffer
+                if (calc_end_of_buffer >> 4) // only need to go to the middle of buffer
                     next_state = OUT;
                 else
                     next_state = CALC;
