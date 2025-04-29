@@ -24,11 +24,10 @@ module filt (
     counter #(.MAX_COUNT(512)) in_buf_counter ( // MAX_COUNT's end value is exclusive
         .clk(Clock),
         .rst(Reset),
-        .en('1),
+        .en(~Reset),
         .out(buf_idx)
     );
 
-    logic rst_calc_buf_idx; 
     logic en_calc_buf_idx; 
     logic calc_end_of_buffer; 
 
@@ -38,9 +37,9 @@ module filt (
 
     assign h = coef(calc_buf_idx);
 
-    counter #(.MAX_COUNT(512)) calc_buf_counter ( // MAX_COUNT's end value is exclusive
+    counter #(.MAX_COUNT(255)) calc_buf_counter ( // MAX_COUNT's end value is exclusive
         .clk(Clock),
-        .rst(rst_calc_buf_idx | Reset),
+        .rst(Reset),
         .en(en_calc_buf_idx),
         .out(calc_buf_idx)
     );
@@ -48,7 +47,7 @@ module filt (
     logic [511:0] buf_in;
     logic [511:0] buf_calc;
 
-    // double buffer block
+    // data path for double buffer block
     always_ff @(posedge Clock or posedge Reset) begin
         if (Reset) begin
             buf_in <= 0;
@@ -78,7 +77,7 @@ module filt (
                 next_state = CALC;
             end
             CALC: begin
-                if (calc_end_of_buffer >> 4) // only need to go to the middle of buffer
+                if (calc_buf_idx == 255 || calc_buf_idx == 511) // only need to go to the middle of buffer
                     next_state = OUT;
                 else
                     next_state = CALC;
@@ -89,7 +88,7 @@ module filt (
         endcase
     end
     logic [35:0] acc; 
-    // data path
+    // data path for calculation and output
     always_ff @(posedge Clock or posedge Reset) begin 
         if(Reset) begin 
             state <= IDLE; 
