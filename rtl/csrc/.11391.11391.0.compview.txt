@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1745963519.477967346, "rt":0.09, "ut":0.04, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1745963519.244765693}
+{"VCS_COMP_START_TIME": 1745963519.244765693}
+{"VCS_COMP_END_TIME": 1745963519.623242805}
+{"VCS_USER_OPTIONS": "+lint=all /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/counter.sv"}
+{"vcs1": {"peak_mem": 248280}}

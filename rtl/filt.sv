@@ -11,7 +11,7 @@ module filt (
     output logic Push
 );
 
-    typedef enum logic [2:0] {IDLE, LOAD, CALC, ROUND, OUT} state_t;
+    typedef enum logic [2:0] {IDLE, LOAD, CALC, OUT} state_t;
     state_t state, next_state;
 
     logic end_of_buffer;
@@ -37,7 +37,7 @@ module filt (
 
     assign h = coef(calc_buf_idx);
 
-    counter #(.MAX_COUNT(255)) calc_buf_counter ( // MAX_COUNT's end value is exclusive
+    counter #(.MAX_COUNT(256)) calc_buf_counter ( // MAX_COUNT's end value is exclusive
         .clk(Clock),
         .rst(Reset),
         .en(en_calc_buf_idx),
@@ -54,12 +54,11 @@ module filt (
             buf_calc <= 0;
         end
         else begin
-            if (~FILTER) begin // LOAD
-                buf_in[buf_idx] <= BitIn;
-            end
-            else begin
+            if (FILTER) begin // LOAD
                 buf_calc <= buf_in;
+                $display("%h", buf_calc);
             end
+            buf_in[buf_idx] <= BitIn;
         end
     end
 
@@ -103,11 +102,11 @@ module filt (
                     case({buf_calc[calc_buf_idx], buf_calc[511-calc_buf_idx]})
                         2'b00: acc <= acc; 
                         2'b01, 2'b10: acc <= acc + h; 
-                        2'b11: acc <= acc + (h <<< 1);
+                        2'b11: acc <= acc + (h <<< 1); // mulitplying by 2
                     endcase
                 end
                 OUT: begin 
-                    Dout <= (acc + 36'sd128) >>> 8; 
+                    Dout <= (acc + 36'sd128) >>> 8;  // rounding step
                     Push <= '1;
                     acc <= 0; 
                 end
