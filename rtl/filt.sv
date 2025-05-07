@@ -17,7 +17,6 @@ module filt (
     
     logic [8:0] buf_idx; // 9 bits needed for 0–511
     logic [8:0] calc_buf_idx; // 9 bits needed for 0–511
-    logic signed [28:0] h;   // filter coeffs
     
 
     //logic en_calc_buf_idx; 
@@ -30,8 +29,8 @@ module filt (
     logic [511:0] buf_in_d, buf_in;
     logic [511:0] buf_calc_d, buf_calc;
     logic signed [35:0] acc, acc_d; 
-    logic push_d; 
-    logic [15:0] dout_d; 
+    logic push_d, push_comb; 
+    logic [15:0] dout_d, dout_comb; 
     logic [$clog2(512)-1 : 0] counter, counter_d; 
 
     assign buf_calc = FILTER ? buf_in_d : buf_calc_d; 
@@ -54,6 +53,7 @@ module filt (
 
 
     always_comb begin
+        buf_in = buf_in_d; 
         buf_in = {BitIn, buf_in_d [511:1]};
     end
     //buffer logic end
@@ -66,6 +66,7 @@ module filt (
             state <= next_state; 
         end 
     end
+
     // control path
     always_comb begin
         next_state = state;
@@ -78,10 +79,10 @@ module filt (
                     next_state = IDLE;
             end
             LOAD: begin 
-                
+                next_state = CALC;
             end
             CALC: begin
-                if (counter_d == 255) // only need to go to the middle of buffer
+                if (counter_d == 254 || counter_d == 510) 
                     next_state = OUT;
                 else
                     next_state = CALC;
@@ -101,8 +102,8 @@ module filt (
             counter_d <= 0;
         end
         else begin
-            push_d <= Push; 
-            dout_d <= Dout; 
+            push_d <= push_comb; 
+            dout_d <= dout_comb; 
             acc_d <= acc; 
             counter_d <= counter;
         end
@@ -110,27 +111,40 @@ module filt (
 
 
     always_comb begin
-            Push = push_d; 
-            Dout = dout_d; 
+            push_comb = push_d; 
+            dout_comb = dout_d; 
             acc = acc_d; 
             counter = counter_d; 
 
         case(state)
+            LOAD: begin
+                acc = '0;
+                counter = '0; 
+                push_comb = '0;
+            end
             CALC: begin 
                 case({buf_calc_d[counter_d], buf_calc_d[511-counter_d]})
                     2'b00: acc = acc_d;  
-                    2'b01, 2'b10: acc = acc_d + h; 
-                    2'b11: acc = acc_d + (h <<< 1); 
+                    2'b01, 2'b10: acc = acc_d + coef(counter_d); 
+                    2'b11: acc = acc_d + (coef(counter_d) <<< 1); 
+                endcase
+                case({buf_calc_d[counter_d+1], buf_calc_d[510-counter_d]})
+                    2'b00: acc = acc_d;  
+                    2'b01, 2'b10: acc = acc_d + coef(counter_d+1); 
+                    2'b11: acc = acc_d + (coef(counter_d+1) <<< 1); 
                 endcase
                 counter = counter_d + 1;
             end
             OUT: begin 
-                Dout = (acc_d + 36'sd128) >>> 8;
-                Push = 1;
+                dout_comb = (acc_d + 36'sd128) >>> 8;
+                push_comb = 1;
             end
         endcase 
-        
     end
+
+    assign Push = push_d;
+    assign Dout = dout_d;
+
 
 ///    always_ff @(posedge Clock or posedge Reset) begin 
 ///        if(Reset) begin 

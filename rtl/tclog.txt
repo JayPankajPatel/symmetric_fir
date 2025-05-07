@@ -28802,9 +28802,6 @@ ix 31 rs 1 lsum -3544 fsum -2041 -7f9
 ix 31 abs 55455 fsum -2041 -2041 lsum 0 coef -1057
 ix 31 wst+ix 55455 samp 0 revsamp  0
 ix 32 abs 55456 fsum -2041 -2041 lsum -1147 coef -1147
-ix 32 wst+ix 55456 samp 0 revsamp  1
-ix 35 rs 0 lsum -6502 fsum -8543 -215f
-ix 39 rs 0 lsum -5168 fsum -13711 -358f
 ix 43 rs 0 lsum -10794 fsum -24505 -5fb9
 ix 47 rs 1 lsum -8146 fsum -32651 -7f8b
 ix 51 rs 1 lsum -12614 fsum -45265 -b0d1
@@ -29603,7 +29600,6 @@ ix 32 abs 56992 fsum -3779 -3779 lsum -1147 coef -1147
 ix 32 wst+ix 56992 samp 1 revsamp  0
 ix 35 rs 0 lsum -3826 fsum -7605 -1db5
 ix 39 rs 0 lsum -8685 fsum -16290 -3fa2
-ix 43 rs 0 lsum -8188 fsum -24478 -5f9e
 ix 47 rs 1 lsum -8280 fsum -32758 -7ff6
 ix 51 rs 1 lsum -19445 fsum -52203 -cbeb
 ix 55 rs 0 lsum -7456 fsum -59659 -e90b

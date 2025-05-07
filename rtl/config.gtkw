@@ -1,27 +1,27 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Wed May  7 07:30:20 2025
+[*] Wed May  7 07:57:38 2025
 [*]
 [dumpfile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.vcd"
-[dumpfile_mtime] "Wed May  7 07:29:39 2025"
-[dumpfile_size] 1247039
+[dumpfile_mtime] "Wed May  7 07:41:53 2025"
+[dumpfile_size] 1228358
 [savefile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/config.gtkw"
-[timestart] 0
+[timestart] 6386700
 [size] 1920 1001
 [pos] -1 -1
-*-21.461906 7790000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-15.388021 6600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.f1.
 [sst_width] 273
-[signals_width] 991
+[signals_width] 473
 [sst_expanded] 1
 [sst_vpaned_height] 297
 @28
 top.f1.BitIn
 top.f1.Clock
-@c00023
+@c00022
 top.f1.Dout[15:0]
-@29
+@28
 (0)top.f1.Dout[15:0]
 (1)top.f1.Dout[15:0]
 (2)top.f1.Dout[15:0]
@@ -38,12 +38,15 @@ top.f1.Dout[15:0]
 (13)top.f1.Dout[15:0]
 (14)top.f1.Dout[15:0]
 (15)top.f1.Dout[15:0]
-@1401201
+@1401200
 -group_end
 @28
 top.f1.FILTER
 top.f1.Push
 top.f1.Reset
+@25
+top.f1.counter[8:0]
+top.f1.counter_d[8:0]
 @22
 top.f1.acc[35:0]
 top.f1.buf_calc[511:0]
