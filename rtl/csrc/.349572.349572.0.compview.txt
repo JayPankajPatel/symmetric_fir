@@ -1,2 +1,0 @@
-Command exited with non-zero status 255
-{"vcs1":{"timestamp_begin":1745909715.654759935, "rt":0.14, "ut":0.06, "st":0.04}}

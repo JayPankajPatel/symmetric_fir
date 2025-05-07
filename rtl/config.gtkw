@@ -1,25 +1,45 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Tue Apr 29 07:12:54 2025
+[*] Wed May  7 07:30:20 2025
 [*]
 [dumpfile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.vcd"
-[dumpfile_mtime] "Tue Apr 29 07:11:46 2025"
-[dumpfile_size] 432174
+[dumpfile_mtime] "Wed May  7 07:29:39 2025"
+[dumpfile_size] 1247039
 [savefile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/config.gtkw"
-[timestart] 960000
-[size] 1000 600
+[timestart] 0
+[size] 1920 1001
 [pos] -1 -1
-*-21.906622 9430000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-21.461906 7790000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
+[treeopen] top.f1.
 [sst_width] 273
-[signals_width] 227
+[signals_width] 991
 [sst_expanded] 1
-[sst_vpaned_height] 157
+[sst_vpaned_height] 297
 @28
 top.f1.BitIn
 top.f1.Clock
-@22
+@c00023
 top.f1.Dout[15:0]
+@29
+(0)top.f1.Dout[15:0]
+(1)top.f1.Dout[15:0]
+(2)top.f1.Dout[15:0]
+(3)top.f1.Dout[15:0]
+(4)top.f1.Dout[15:0]
+(5)top.f1.Dout[15:0]
+(6)top.f1.Dout[15:0]
+(7)top.f1.Dout[15:0]
+(8)top.f1.Dout[15:0]
+(9)top.f1.Dout[15:0]
+(10)top.f1.Dout[15:0]
+(11)top.f1.Dout[15:0]
+(12)top.f1.Dout[15:0]
+(13)top.f1.Dout[15:0]
+(14)top.f1.Dout[15:0]
+(15)top.f1.Dout[15:0]
+@1401201
+-group_end
 @28
 top.f1.FILTER
 top.f1.Push
@@ -27,11 +47,10 @@ top.f1.Reset
 @22
 top.f1.acc[35:0]
 top.f1.buf_calc[511:0]
-@24
-top.f1.buf_idx[8:0]
-@22
+top.f1.buf_calc_d[511:0]
 top.f1.buf_in[511:0]
-@25
+top.f1.buf_in_d[511:0]
+@24
 top.f1.calc_buf_idx[8:0]
 @28
 top.f1.calc_end_of_buffer

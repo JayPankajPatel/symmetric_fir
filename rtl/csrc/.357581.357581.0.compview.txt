@@ -1,4 +1,0 @@
-Command exited with non-zero status 255
-{"vcs1":{"timestamp_begin":1745910638.411876369, "rt":0.15, "ut":0.06, "st":0.02}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1745910638.221844647}
-{"VCS_COMP_START_TIME": 1745910638.221844647}
