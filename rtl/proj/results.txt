@@ -1,0 +1,6 @@
+Run for project
+Run at Wed May  7 17:58:27 2025
+VCS simulation ran
+Synthesis worked ish
+VCS simulation ran
+Proj worked

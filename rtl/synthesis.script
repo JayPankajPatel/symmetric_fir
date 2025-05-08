@@ -1,0 +1,25 @@
+set link_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}
+set target_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}
+suppress_message { UID-401 VER-130 }
+read_sverilog ./filt.sv
+current_design filt
+create_clock Clock -name Clock -period 0.980
+set_propagated_clock Clock
+set_clock_uncertainty 0.25 Clock
+set_propagated_clock Clock
+set_output_delay 0.5 -clock Clock [all_outputs]
+set all_inputs_wo_rst_Clock [remove_from_collection [remove_from_collection [all_inputs] [get_port Clock]] [get_port Reset]]
+set_driving_cell -lib_cell NAND2X1 $all_inputs_wo_rst_Clock
+set_input_delay 0.6 -clock Clock $all_inputs_wo_rst_Clock
+set_output_delay 0.6 -clock Clock [all_outputs]
+set_fix_hold [ get_clocks Clock ]
+set_output_delay 0.3 -clock Clock [all_outputs]
+set_max_delay 0.980 -from [all_inputs] -to [all_outputs]
+compile_ultra
+create_clock Clock -name Clock -period 1.400
+
+update_timing
+report_timing -max_paths 5
+write -hierarchy -format verilog -output filt_gates.v
+quit
+

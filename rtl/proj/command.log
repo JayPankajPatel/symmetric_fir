@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version V-2023.12-SP5 for linux64 -- Jul 16, 2024
-#@ # Date:   Wed May  7 17:48:56 2025
+#@ # Date:   Wed May  7 18:03:19 2025
 #@ # Run by: 018270239@coe-ee-cad23.sjsuad.sjsu.edu
 #@ 
 
@@ -9238,8 +9238,8 @@ source /home/018270239@SJSUAD.SJSU.EDU/.synopsys_dc.setup
 #@ 
 #@ # -- End source /home/018270239@SJSUAD.SJSU.EDU/.synopsys_dc.setup
 
-source -echo -verbose /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/synthesis.script
-#@ # -- Starting source /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/synthesis.script
+source -echo -verbose /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/proj/synthesis.script
+#@ # -- Starting source /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/proj/synthesis.script
 
 #@ set link_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}
 #@ set target_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}

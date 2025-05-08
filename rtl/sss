@@ -1,0 +1,4 @@
+#!/usr/bin/csh
+cd /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl
+source /apps/design_environment.csh
+dc_shell -f synthesis.script | tee synres.txt

@@ -1,21 +1,21 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Wed May  7 07:57:38 2025
+[*] Wed May  7 21:57:30 2025
 [*]
 [dumpfile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.vcd"
-[dumpfile_mtime] "Wed May  7 07:41:53 2025"
-[dumpfile_size] 1228358
+[dumpfile_mtime] "Wed May  7 21:56:17 2025"
+[dumpfile_size] 1961352
 [savefile] "/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/config.gtkw"
-[timestart] 6386700
-[size] 1920 1001
+[timestart] 13721400
+[size] 1920 921
 [pos] -1 -1
-*-15.388021 6600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-16.388021 14106400 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.f1.
 [sst_width] 273
-[signals_width] 473
+[signals_width] 507
 [sst_expanded] 1
-[sst_vpaned_height] 297
+[sst_vpaned_height] 278
 @28
 top.f1.BitIn
 top.f1.Clock
@@ -40,30 +40,58 @@ top.f1.Dout[15:0]
 (15)top.f1.Dout[15:0]
 @1401200
 -group_end
+@c00022
+top.f1.acc[35:0]
+@28
+(0)top.f1.acc[35:0]
+(1)top.f1.acc[35:0]
+(2)top.f1.acc[35:0]
+(3)top.f1.acc[35:0]
+(4)top.f1.acc[35:0]
+(5)top.f1.acc[35:0]
+(6)top.f1.acc[35:0]
+(7)top.f1.acc[35:0]
+(8)top.f1.acc[35:0]
+(9)top.f1.acc[35:0]
+(10)top.f1.acc[35:0]
+(11)top.f1.acc[35:0]
+(12)top.f1.acc[35:0]
+(13)top.f1.acc[35:0]
+(14)top.f1.acc[35:0]
+(15)top.f1.acc[35:0]
+(16)top.f1.acc[35:0]
+(17)top.f1.acc[35:0]
+(18)top.f1.acc[35:0]
+(19)top.f1.acc[35:0]
+(20)top.f1.acc[35:0]
+(21)top.f1.acc[35:0]
+(22)top.f1.acc[35:0]
+(23)top.f1.acc[35:0]
+(24)top.f1.acc[35:0]
+(25)top.f1.acc[35:0]
+(26)top.f1.acc[35:0]
+(27)top.f1.acc[35:0]
+(28)top.f1.acc[35:0]
+(29)top.f1.acc[35:0]
+(30)top.f1.acc[35:0]
+(31)top.f1.acc[35:0]
+(32)top.f1.acc[35:0]
+(33)top.f1.acc[35:0]
+(34)top.f1.acc[35:0]
+(35)top.f1.acc[35:0]
+@1401200
+-group_end
+@25
+top.f1.counter[7:0]
+top.f1.counter_d[7:0]
 @28
 top.f1.FILTER
 top.f1.Push
 top.f1.Reset
-@25
-top.f1.counter[8:0]
-top.f1.counter_d[8:0]
 @22
-top.f1.acc[35:0]
 top.f1.buf_calc[511:0]
 top.f1.buf_calc_d[511:0]
 top.f1.buf_in[511:0]
 top.f1.buf_in_d[511:0]
-@24
-top.f1.calc_buf_idx[8:0]
-@28
-top.f1.calc_end_of_buffer
-top.f1.en_calc_buf_idx
-top.f1.end_of_buffer
-@22
-top.f1.h[28:0]
-@28
-top.f1.next_state[2:0]
-top.f1.rst_calc_buf_idx
-top.f1.state[2:0]
 [pattern_trace] 1
 [pattern_trace] 0

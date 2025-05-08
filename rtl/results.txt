@@ -1,3 +1,5 @@
 Run for project
-Run at Tue May  6 18:39:30 2025
-VCS didn't run
+Run at Wed May  7 17:48:50 2025
+VCS simulation ran
+Synthesis worked ish
+VCS simulation failed

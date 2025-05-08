@@ -1,0 +1,986 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version V-2023.12-SP5 for linux64 - Jul 16, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/018270239@SJSUAD.SJSU.EDU/.synopsys_dc_gui/preferences.tcl
+Current time:       Wed May  7 17:48:56 2025
+Hostname:           coe-ee-cad23.sjsuad.sjsu.edu
+CPU Model:          Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+CPU Details:        Cores = 16 : Sockets = 1 : Cache Size = 16384 KB : Freq = 4.40 GHz
+OS:                 Linux 5.14.0-503.38.1.el9_5.x86_64
+RAM:                 15 GB (Free   7 GB)
+Swap:                 7 GB (Free   7 GB)
+Work Filesystem:    /home/018270239@SJSUAD.SJSU.EDU mounted to coe-ee-pool.sjsuad.sjsu.edu:/export/users/018270239
+Tmp Filesystem:     / mounted to /dev/mapper/rhel-root
+Work Disk:          963 GB (Free 803 GB)
+Tmp Disk:            69 GB (Free  58 GB)
+
+CPU Load: 2%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+set link_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}
+/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb
+set target_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}
+/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db
+suppress_message { UID-401 VER-130 }
+read_sverilog ./filt.sv
+Loading db file '/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Loading db file '/apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb'
+Loading db file '/apps/synopsys/dc_compiler_2023_V/syn/V-2023.12-SP5/libraries/syn/gtech.db'
+Loading db file '/apps/synopsys/dc_compiler_2023_V/syn/V-2023.12-SP5/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Loading sverilog file '/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv
+Opening include file fircoefs2.v
+Warning:  /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv:42: the undeclared symbol 'h' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv:42: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv:161: signed to unsigned assignment occurs. (VER-318)
+Warning:  fircoefs2.v:141: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:142: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:143: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:144: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:145: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:146: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:147: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:148: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:149: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:150: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:151: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:152: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:153: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:154: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:155: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:156: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:157: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:158: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:159: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:160: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:161: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:162: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:163: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:164: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:165: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:166: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:167: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:168: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:169: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:170: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:171: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:172: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:173: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:174: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:175: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:176: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:177: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:178: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:179: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:180: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:181: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:182: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:183: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:184: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:185: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:186: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:187: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:188: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:189: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:190: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:191: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:192: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:193: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:194: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:195: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:196: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:197: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:198: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:199: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:200: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:201: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:202: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:203: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:204: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:205: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:206: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:207: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:208: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:209: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:210: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:211: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:212: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:213: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:214: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:215: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:216: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:217: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:218: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:219: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:220: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:221: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:222: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:223: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:224: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:225: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:226: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:227: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:228: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:229: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:230: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:231: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:232: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:233: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:234: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:235: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:236: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:237: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:238: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:239: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:240: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:241: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:242: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:243: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:244: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:245: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:246: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:247: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:248: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:249: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:250: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:251: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:252: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:253: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:254: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:255: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:256: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:257: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:258: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:259: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:260: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:261: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:262: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:263: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:264: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:265: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:266: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:267: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:268: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 42 in file
+	'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 75 in file
+	'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            77            |    auto/auto     |
+===============================================
+Warning:  fircoefs2.v:14: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:16: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:18: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:20: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:22: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:24: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:26: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:28: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:30: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:32: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:34: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:36: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:38: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:40: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:42: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:44: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:46: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:48: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:50: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:52: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:54: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:56: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:58: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:60: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:62: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:64: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:66: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:68: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:70: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:72: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:74: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:76: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:78: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:80: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:82: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:84: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:86: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:88: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:90: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:92: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:94: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:96: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:98: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:100: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:102: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:104: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:106: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:108: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:110: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:112: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:114: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:116: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:118: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:120: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:122: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:124: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:126: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:128: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:130: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:132: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:134: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:136: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:138: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  fircoefs2.v:140: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 127 in file
+	'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           138            |     no/auto      |
+|           146            |    auto/auto     |
+|           151            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine filt line 47 in file
+		'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   buf_calc_d_reg    | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    buf_in_d_reg     | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filt line 65 in file
+		'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine filt line 103 in file
+		'/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     push_d_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     dout_d_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      acc_d_reg      | Flip-flop |  36   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    counter_d_reg    | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     filt/146     |  512   |    1    |      9       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt.db:filt'
+Loaded 1 design.
+Current design is 'filt'.
+filt
+current_design filt
+Current design is 'filt'.
+{filt}
+create_clock Clock -name Clock -period 0.980
+1
+set_propagated_clock Clock
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_clock_uncertainty 0.25 Clock
+1
+set_propagated_clock Clock
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+set_output_delay 0.5 -clock Clock [all_outputs]
+1
+set all_inputs_wo_rst_Clock [remove_from_collection [remove_from_collection [all_inputs] [get_port Clock]] [get_port Reset]]
+{FILTER BitIn}
+set_driving_cell -lib_cell NAND2X1 $all_inputs_wo_rst_Clock
+1
+set_input_delay 0.6 -clock Clock $all_inputs_wo_rst_Clock
+1
+set_output_delay 0.6 -clock Clock [all_outputs]
+1
+set_fix_hold [ get_clocks Clock ]
+1
+set_output_delay 0.3 -clock Clock [all_outputs]
+1
+set_max_delay 0.980 -from [all_inputs] -to [all_outputs]
+1
+compile_ultra
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 2%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+Analyzing: "/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 5926                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1087                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1982                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'filt'
+
+Loaded alib file './alib-52/gscl45nm.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+CPU Load: 4%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'filt'
+Information: The register 'state_reg[2]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'filt'.
+Information: Added key list 'DesignWare' to design 'filt'. (DDB-72)
+CPU Load: 4%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:21   22381.9      0.53     106.4    8230.0                           160949.0469      0.00  
+    0:00:22   22167.4      0.63     109.8    8066.9                           160223.6719      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:22   22185.2      0.63     109.8    8066.9                           160328.4062      0.00  
+    0:00:22   22185.2      0.63     109.8    8066.9                           160328.4062      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Mapping 'filt_DP_OP_451J1_122_58_3'
+Information: The register 'acc_d_reg[35]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[34]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[33]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[32]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[31]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[30]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[29]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[28]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[27]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[26]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[25]' will be removed. (OPT-1207)
+Information: The register 'acc_d_reg[24]' will be removed. (OPT-1207)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:23   20380.8      0.67      85.6    6716.2                           146356.1875      0.00  
+    0:00:27   20676.0      0.43      80.9    6719.1                           148770.1094      0.00  
+    0:00:27   20676.0      0.43      80.9    6719.1                           148770.1094      0.00  
+    0:00:27   20676.0      0.43      80.9    6719.1                           148770.1094      0.00  
+    0:00:27   20676.0      0.43      80.9    6719.1                           148770.1094      0.00  
+    0:00:27   20670.3      0.43      81.1    6709.3                           148761.2812      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:28   20392.0      0.43      80.4    6662.9                           147815.0938      0.00  
+    0:00:29   20392.0      0.43      80.4    6662.1                           147815.0938      0.00  
+    0:00:29   20392.0      0.43      80.4    6662.1                           147815.0938      0.00  
+    0:00:29   20392.0      0.43      80.4    6662.1                           147815.0938      0.00  
+    0:00:29   20392.0      0.43      80.4    6662.1                           147815.0938      0.00  
+    0:00:29   20389.7      0.43      80.4    6661.7                           147779.4375      0.00  
+    0:00:29   20389.7      0.43      80.4    6661.7                           147779.4375      0.00  
+    0:00:31   20430.5      0.43      80.3    6661.3                           147860.4688      0.00  
+    0:00:31   20430.5      0.43      80.3    6661.3                           147860.4688      0.00  
+    0:00:31   20431.0      0.43      80.3    6660.6                           147869.4219      0.00  
+    0:00:31   20431.0      0.43      80.3    6660.6                           147869.4219      0.00  
+    0:00:32   20431.0      0.43      80.3    6660.6                           147869.4219      0.00  
+    0:00:32   20431.0      0.43      80.3    6660.6                           147869.4219      0.00  
+    0:00:34   20507.0      0.41      79.9    6664.0                           148179.5625      0.00  
+    0:00:34   20507.0      0.41      79.9    6664.0                           148179.5625      0.00  
+    0:00:38   20519.7      0.41      80.0    6667.5                           148245.6719      0.00  
+    0:00:38   20519.7      0.41      80.0    6667.5                           148245.6719      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:40   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+    0:00:41   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:41   20575.1      0.40      79.8    6665.9                           148577.3750      0.00  
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:43   21976.8      0.39      79.4    5236.5 acc_d_reg[18]/D           158801.3281      0.00  
+    0:00:43   22001.3      0.39      79.4    5223.7 acc_d_reg[18]/D           158868.1250      0.00  
+    0:00:43   22014.4      0.39      79.3    5222.1 acc_d_reg[18]/D           158882.7969      0.00  
+    0:00:44   22034.1      0.38      79.3    5204.8 net49107                  158997.6562      0.00  
+    0:00:44   22187.1      0.40      79.6    4991.2 acc_d_reg[18]/D           159866.6719      0.00  
+    0:00:44   22343.4      0.43      80.5    4793.9 acc_d_reg[16]/D           160841.4375      0.00  
+    0:00:45   22376.2      0.41      80.0    4780.3 acc_d_reg[19]/D           161065.4844      0.00  
+    0:00:45   22386.1      0.41      79.9    4776.2                           161212.6875      0.00  
+    0:00:46   22385.6      0.41      79.9    4772.3                           161213.3906      0.00  
+    0:00:46   22398.8      0.40      79.7    4767.8 acc_d_reg[19]/D           161241.7656      0.00  
+    0:00:47   22399.2      0.40      79.7    4767.7                           161246.1719      0.00  
+    0:00:49   22431.6      0.40      79.7    4827.3                           161234.8906      0.00  
+    0:00:49   22431.6      0.40      79.7    4827.3                           161234.8906      0.00  
+    0:00:49   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:49   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:50   22424.1      0.40      79.7    4826.6                           161105.3594      0.00  
+    0:00:53   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:53   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:54   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:54   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:54   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:54   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:55   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:55   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:56   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:56   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:57   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:57   22377.2      0.38      79.3    4933.4                           160592.3438      0.00  
+    0:00:57   22258.0      0.38      79.4    4920.6                           159799.9531      0.00  
+    0:00:58   22185.7      0.38      79.3    4897.5                           159810.1250      0.00  
+    0:00:58   22185.7      0.38      79.3    4897.5                           159810.1250      0.00  
+    0:00:58   22184.7      0.38      78.8    4897.2                           159805.1094      0.00  
+    0:00:58   22112.0      0.38      78.5    4828.5 net48573                  159197.0312      0.00  
+    0:00:59   22135.5      0.38      78.5    4812.5 acc_d_reg[19]/D           159292.1094      0.00  
+    0:00:59   22174.0      0.39      78.8    4792.1 acc_d_reg[19]/D           159620.0312      0.00  
+    0:01:00   22198.8      0.39      78.7    4789.0 acc_d_reg[19]/D           159602.8750      0.00  
+    0:01:00   22308.6      0.48      80.8    4669.3 net48308                  160251.3750      0.00  
+    0:01:01   22411.4      0.48      80.5    4609.1 acc_d_reg[19]/D           160837.6875      0.00  
+    0:01:01   22419.4      0.45      80.1    4604.9 acc_d_reg[19]/D           160946.0000      0.00  
+    0:01:01   22453.7      0.45      80.1    4596.4 net50022                  161191.3750      0.00  
+    0:01:01   22558.3      0.47      80.5    4471.0                           161881.0781      0.00  
+    0:01:04   22513.3      0.39      78.9    4645.2                           161036.2344      0.00  
+    0:01:04   22513.3      0.39      78.9    4645.2                           161036.2344      0.00  
+    0:01:04   22514.2      0.39      78.9    4645.2                           161092.6719      0.00  
+    0:01:04   22514.2      0.39      78.9    4645.2                           161092.6719      0.00  
+    0:01:04   22514.2      0.39      78.9    4645.2                           161092.6719      0.00  
+    0:01:04   22468.7      0.39      78.9    4635.2                           160539.2500      0.00  
+CPU Load: 5%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+Loading db file '/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'filt' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'Clock': 1074 load(s), 1 driver(s)
+     Net 'n6944': 1074 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 5%, Ram Free: 7 GB, Swap Free: 7 GB, Work Disk Free: 803 GB, Tmp Disk Free: 58 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+create_clock Clock -name Clock -period 1.400
+1
+update_timing
+Information: Updating design information... (UID-85)
+Warning: Design 'filt' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+report_timing -max_paths 5
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : filt
+Version: V-2023.12-SP5
+Date   : Wed May  7 17:50:39 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: counter_d_reg[5]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: acc_d_reg[21]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_d_reg[5]/CLK (DFFSR)             0.00 #     0.00 r
+  counter_d_reg[5]/Q (DFFSR)               0.11       0.11 r
+  U4607/Y (INVX1)                          0.02       0.14 f
+  U2982/Y (NAND2X1)                        0.03       0.17 r
+  U2906/Y (INVX1)                          0.02       0.19 f
+  U3007/Y (INVX1)                          0.01       0.20 r
+  U4654/Y (OR2X2)                          0.05       0.25 r
+  U3117/Y (INVX4)                          0.04       0.28 f
+  U4763/Y (AOI22X1)                        0.04       0.32 r
+  U2810/Y (NAND2X1)                        0.02       0.35 f
+  U2802/Y (NOR2X1)                         0.03       0.38 r
+  U2801/Y (NAND2X1)                        0.02       0.39 f
+  U3545/Y (AOI21X1)                        0.03       0.43 r
+  U2938/Y (NAND2X1)                        0.01       0.44 f
+  U2937/Y (INVX1)                          0.01       0.45 r
+  U2823/Y (AND2X2)                         0.03       0.48 r
+  U2950/Y (NOR3X1)                         0.02       0.50 f
+  U2986/Y (INVX2)                          0.02       0.53 r
+  U4821/Y (INVX1)                          0.02       0.55 f
+  U5333/Y (INVX1)                          0.01       0.56 r
+  U3234/Y (AND2X2)                         0.05       0.61 r
+  U4392/Y (NAND2X1)                        0.02       0.63 f
+  U5704/Y (OAI21X1)                        0.04       0.67 r
+  U5762/YS (FAX1)                          0.08       0.74 r
+  U2865/Y (NOR2X1)                         0.01       0.76 f
+  U2980/Y (INVX1)                          0.00       0.76 r
+  U3146/Y (INVX1)                          0.01       0.77 f
+  U3511/Y (NOR2X1)                         0.04       0.81 r
+  U3534/Y (AOI21X1)                        0.03       0.84 f
+  U5845/Y (OAI21X1)                        0.04       0.89 r
+  U4446/Y (AOI21X1)                        0.02       0.90 f
+  U5846/Y (INVX1)                          0.00       0.91 r
+  U3225/Y (INVX2)                          0.03       0.94 f
+  U5948/Y (OAI21X1)                        0.05       0.99 r
+  U5949/Y (XNOR2X1)                        0.04       1.03 r
+  U5950/Y (INVX1)                          0.02       1.05 f
+  U5951/Y (AOI21X1)                        0.03       1.09 r
+  U5952/Y (INVX1)                          0.02       1.10 f
+  acc_d_reg[21]/D (DFFSR)                  0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock Clock (rise edge)                  1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  clock uncertainty                       -0.25       1.15
+  acc_d_reg[21]/CLK (DFFSR)                0.00       1.15 r
+  library setup time                      -0.02       1.13
+  data required time                                  1.13
+  -----------------------------------------------------------
+  data required time                                  1.13
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: counter_d_reg[5]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: acc_d_reg[19]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_d_reg[5]/CLK (DFFSR)             0.00 #     0.00 r
+  counter_d_reg[5]/Q (DFFSR)               0.11       0.11 r
+  U4607/Y (INVX1)                          0.02       0.14 f
+  U2982/Y (NAND2X1)                        0.03       0.17 r
+  U2906/Y (INVX1)                          0.02       0.19 f
+  U3007/Y (INVX1)                          0.01       0.20 r
+  U4654/Y (OR2X2)                          0.05       0.25 r
+  U3117/Y (INVX4)                          0.04       0.28 f
+  U4763/Y (AOI22X1)                        0.04       0.32 r
+  U2810/Y (NAND2X1)                        0.02       0.35 f
+  U2802/Y (NOR2X1)                         0.03       0.38 r
+  U2801/Y (NAND2X1)                        0.02       0.39 f
+  U3545/Y (AOI21X1)                        0.03       0.43 r
+  U2938/Y (NAND2X1)                        0.01       0.44 f
+  U2937/Y (INVX1)                          0.01       0.45 r
+  U2823/Y (AND2X2)                         0.03       0.48 r
+  U2950/Y (NOR3X1)                         0.02       0.50 f
+  U2986/Y (INVX2)                          0.02       0.53 r
+  U4821/Y (INVX1)                          0.02       0.55 f
+  U5333/Y (INVX1)                          0.01       0.56 r
+  U3234/Y (AND2X2)                         0.05       0.61 r
+  U4392/Y (NAND2X1)                        0.02       0.63 f
+  U5704/Y (OAI21X1)                        0.04       0.67 r
+  U5762/YS (FAX1)                          0.08       0.74 r
+  U2865/Y (NOR2X1)                         0.01       0.76 f
+  U2980/Y (INVX1)                          0.00       0.76 r
+  U3146/Y (INVX1)                          0.01       0.77 f
+  U3511/Y (NOR2X1)                         0.04       0.81 r
+  U3534/Y (AOI21X1)                        0.03       0.84 f
+  U5845/Y (OAI21X1)                        0.04       0.89 r
+  U4446/Y (AOI21X1)                        0.02       0.90 f
+  U5846/Y (INVX1)                          0.00       0.91 r
+  U3225/Y (INVX2)                          0.03       0.94 f
+  U5920/Y (OAI21X1)                        0.05       0.99 r
+  U5922/Y (XNOR2X1)                        0.04       1.03 r
+  U5923/Y (INVX1)                          0.02       1.05 f
+  U5924/Y (AOI21X1)                        0.03       1.09 r
+  U5925/Y (INVX1)                          0.02       1.10 f
+  acc_d_reg[19]/D (DFFSR)                  0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock Clock (rise edge)                  1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  clock uncertainty                       -0.25       1.15
+  acc_d_reg[19]/CLK (DFFSR)                0.00       1.15 r
+  library setup time                      -0.02       1.13
+  data required time                                  1.13
+  -----------------------------------------------------------
+  data required time                                  1.13
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: counter_d_reg[5]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: acc_d_reg[22]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_d_reg[5]/CLK (DFFSR)             0.00 #     0.00 r
+  counter_d_reg[5]/Q (DFFSR)               0.11       0.11 r
+  U4607/Y (INVX1)                          0.02       0.14 f
+  U2982/Y (NAND2X1)                        0.03       0.17 r
+  U2906/Y (INVX1)                          0.02       0.19 f
+  U3007/Y (INVX1)                          0.01       0.20 r
+  U4654/Y (OR2X2)                          0.05       0.25 r
+  U3117/Y (INVX4)                          0.04       0.28 f
+  U4763/Y (AOI22X1)                        0.04       0.32 r
+  U2810/Y (NAND2X1)                        0.02       0.35 f
+  U2802/Y (NOR2X1)                         0.03       0.38 r
+  U2801/Y (NAND2X1)                        0.02       0.39 f
+  U3545/Y (AOI21X1)                        0.03       0.43 r
+  U2938/Y (NAND2X1)                        0.01       0.44 f
+  U2937/Y (INVX1)                          0.01       0.45 r
+  U2823/Y (AND2X2)                         0.03       0.48 r
+  U2950/Y (NOR3X1)                         0.02       0.50 f
+  U2986/Y (INVX2)                          0.02       0.53 r
+  U4821/Y (INVX1)                          0.02       0.55 f
+  U5333/Y (INVX1)                          0.01       0.56 r
+  U3234/Y (AND2X2)                         0.05       0.61 r
+  U4392/Y (NAND2X1)                        0.02       0.63 f
+  U5704/Y (OAI21X1)                        0.04       0.67 r
+  U5762/YS (FAX1)                          0.08       0.74 r
+  U2865/Y (NOR2X1)                         0.01       0.76 f
+  U2980/Y (INVX1)                          0.00       0.76 r
+  U3146/Y (INVX1)                          0.01       0.77 f
+  U3511/Y (NOR2X1)                         0.04       0.81 r
+  U3534/Y (AOI21X1)                        0.03       0.84 f
+  U5845/Y (OAI21X1)                        0.04       0.89 r
+  U4446/Y (AOI21X1)                        0.02       0.90 f
+  U5846/Y (INVX1)                          0.00       0.91 r
+  U3225/Y (INVX2)                          0.03       0.94 f
+  U5936/Y (OAI21X1)                        0.05       0.99 r
+  U5937/Y (XNOR2X1)                        0.04       1.03 r
+  U5938/Y (INVX1)                          0.02       1.05 f
+  U5940/Y (AOI21X1)                        0.03       1.09 r
+  U5941/Y (INVX1)                          0.02       1.10 f
+  acc_d_reg[22]/D (DFFSR)                  0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock Clock (rise edge)                  1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  clock uncertainty                       -0.25       1.15
+  acc_d_reg[22]/CLK (DFFSR)                0.00       1.15 r
+  library setup time                      -0.02       1.13
+  data required time                                  1.13
+  -----------------------------------------------------------
+  data required time                                  1.13
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: counter_d_reg[5]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: acc_d_reg[23]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_d_reg[5]/CLK (DFFSR)             0.00 #     0.00 r
+  counter_d_reg[5]/Q (DFFSR)               0.11       0.11 r
+  U4607/Y (INVX1)                          0.02       0.14 f
+  U2982/Y (NAND2X1)                        0.03       0.17 r
+  U2906/Y (INVX1)                          0.02       0.19 f
+  U3007/Y (INVX1)                          0.01       0.20 r
+  U4654/Y (OR2X2)                          0.05       0.25 r
+  U3117/Y (INVX4)                          0.04       0.28 f
+  U4763/Y (AOI22X1)                        0.04       0.32 r
+  U2810/Y (NAND2X1)                        0.02       0.35 f
+  U2802/Y (NOR2X1)                         0.03       0.38 r
+  U2801/Y (NAND2X1)                        0.02       0.39 f
+  U3545/Y (AOI21X1)                        0.03       0.43 r
+  U2938/Y (NAND2X1)                        0.01       0.44 f
+  U2937/Y (INVX1)                          0.01       0.45 r
+  U2823/Y (AND2X2)                         0.03       0.48 r
+  U2950/Y (NOR3X1)                         0.02       0.50 f
+  U2986/Y (INVX2)                          0.02       0.53 r
+  U4821/Y (INVX1)                          0.02       0.55 f
+  U5333/Y (INVX1)                          0.01       0.56 r
+  U3234/Y (AND2X2)                         0.05       0.61 r
+  U4392/Y (NAND2X1)                        0.02       0.63 f
+  U5704/Y (OAI21X1)                        0.04       0.67 r
+  U5762/YS (FAX1)                          0.08       0.74 r
+  U2865/Y (NOR2X1)                         0.01       0.76 f
+  U2980/Y (INVX1)                          0.00       0.76 r
+  U3146/Y (INVX1)                          0.01       0.77 f
+  U3511/Y (NOR2X1)                         0.04       0.81 r
+  U3534/Y (AOI21X1)                        0.03       0.84 f
+  U5845/Y (OAI21X1)                        0.04       0.89 r
+  U4446/Y (AOI21X1)                        0.02       0.90 f
+  U5846/Y (INVX1)                          0.00       0.91 r
+  U3225/Y (INVX2)                          0.03       0.94 f
+  U5911/Y (OAI21X1)                        0.05       0.99 r
+  U5915/Y (XNOR2X1)                        0.04       1.03 r
+  U5916/Y (INVX1)                          0.02       1.05 f
+  U5917/Y (AOI21X1)                        0.03       1.09 r
+  U5918/Y (INVX1)                          0.02       1.10 f
+  acc_d_reg[23]/D (DFFSR)                  0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock Clock (rise edge)                  1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  clock uncertainty                       -0.25       1.15
+  acc_d_reg[23]/CLK (DFFSR)                0.00       1.15 r
+  library setup time                      -0.02       1.13
+  data required time                                  1.13
+  -----------------------------------------------------------
+  data required time                                  1.13
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: counter_d_reg[6]
+              (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: acc_d_reg[17]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_d_reg[6]/CLK (DFFSR)             0.00 #     0.00 r
+  counter_d_reg[6]/Q (DFFSR)               0.12       0.12 r
+  U4611/Y (INVX1)                          0.02       0.14 f
+  U4612/Y (INVX1)                          0.00       0.14 r
+  U4640/Y (NAND2X1)                        0.01       0.16 f
+  U4352/Y (INVX1)                          0.01       0.17 r
+  U4354/Y (INVX1)                          0.01       0.18 f
+  U4654/Y (OR2X2)                          0.05       0.24 f
+  U2902/Y (INVX2)                          0.05       0.28 r
+  U4735/Y (AOI22X1)                        0.03       0.31 f
+  U4736/Y (NAND2X1)                        0.02       0.33 r
+  U3460/Y (NOR2X1)                         0.02       0.35 f
+  U3459/Y (NAND3X1)                        0.03       0.38 r
+  U2897/Y (AOI21X1)                        0.02       0.41 f
+  U4749/Y (NAND3X1)                        0.03       0.44 r
+  U3187/Y (INVX1)                          0.03       0.46 f
+  U2950/Y (NOR3X1)                         0.05       0.51 r
+  U2986/Y (INVX2)                          0.02       0.54 f
+  U4823/Y (INVX1)                          0.01       0.55 r
+  U3063/Y (INVX1)                          0.02       0.57 f
+  U3421/Y (AOI21X1)                        0.04       0.61 r
+  U3195/Y (INVX2)                          0.03       0.64 f
+  U5511/YS (FAX1)                          0.08       0.72 f
+  U2936/Y (NOR2X1)                         0.03       0.75 r
+  U2935/Y (INVX1)                          0.02       0.77 f
+  U2889/Y (AND2X2)                         0.04       0.81 f
+  U2826/Y (AOI21X1)                        0.03       0.84 r
+  U2825/Y (OAI21X1)                        0.03       0.87 f
+  U4446/Y (AOI21X1)                        0.03       0.90 r
+  U5846/Y (INVX1)                          0.02       0.92 f
+  U3225/Y (INVX2)                          0.04       0.96 r
+  U3065/Y (INVX1)                          0.03       0.99 f
+  U3067/Y (XOR2X1)                         0.03       1.02 r
+  U5855/Y (NAND2X1)                        0.02       1.04 f
+  U5856/Y (INVX1)                          0.00       1.05 r
+  U5857/Y (NOR2X1)                         0.01       1.05 f
+  U5858/Y (INVX1)                          0.00       1.05 r
+  acc_d_reg[17]/D (DFFSR)                  0.00       1.05 r
+  data arrival time                                   1.05
+
+  clock Clock (rise edge)                  1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  clock uncertainty                       -0.25       1.15
+  acc_d_reg[17]/CLK (DFFSR)                0.00       1.15 r
+  library setup time                      -0.07       1.08
+  data required time                                  1.08
+  -----------------------------------------------------------
+  data required time                                  1.08
+  data arrival time                                  -1.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+1
+write -hierarchy -format verilog -output filt_gates.v
+Writing verilog file '/home/018270239@SJSUAD.SJSU.EDU/Repos/287/symmetric_fir/rtl/filt_gates.v'.
+1
+quit
+
+Memory usage for this session 166 Mbytes.
+Memory usage for this session including child processes 199 Mbytes.
+CPU usage for this session 102 seconds ( 0.03 hours ).
+Elapsed time for this session 105 seconds ( 0.03 hours ).
+
+Thank you...
